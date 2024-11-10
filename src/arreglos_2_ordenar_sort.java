@@ -33,9 +33,6 @@ public class arreglos_2_ordenar_sort {
         System.out.println(productos[4]);
         System.out.println(productos[5]);
         System.out.println(productos[6]);
-
-
-
-        
+      
     }
 }
