@@ -26,7 +26,7 @@ public class arreglos_2_ordenar_sort {
         System.out.println("\nSe imprime sin ordenar con ciclo for");
 
         for (int i = 0; i < total; i++) {
-            System.out.println("Productos[" + (i + 1) +"] = " + productos[i]);
+            System.out.println("Productos[" + (i + 1) + "] = " + productos[i]);
         }
 
         Arrays.sort(productos);
@@ -52,7 +52,7 @@ public class arreglos_2_ordenar_sort {
         int i = 0;
 
         while (i < total) {
-            System.out.println("Producto " + (i+1) + " = " + productos[i]);
+            System.out.println("Producto " + (i + 1) + " = " + productos[i]);
             i++;
         }
 
@@ -61,9 +61,9 @@ public class arreglos_2_ordenar_sort {
         int j = 0;
 
         do {
-            System.out.println("Producto " + (j+1) + " = " + productos[j]);
+            System.out.println("Producto " + (j + 1) + " = " + productos[j]);
             j++;
         } while (j < total);
-      
+
     }
 }
