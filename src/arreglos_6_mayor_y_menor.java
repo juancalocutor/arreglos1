@@ -26,5 +26,23 @@ public class arreglos_6_mayor_y_menor {
         }
 
         System.out.println("Número Mínimo es: " + a[min]);
+
+        System.out.println("\n");
+
+        //ordenamos el arreglo método burbuja
+
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = 0; j < a.length - 1 - i; j++) {
+                if (((Integer) a[j + 1]).compareTo(a[j]) < 0) {
+                    int aux3 = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = aux3;
+                }
+            }
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("Número a[" + (i + 1) + "] = " + a[i]);
+        }
     }
 }
