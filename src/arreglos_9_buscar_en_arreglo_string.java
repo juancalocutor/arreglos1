@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class arreglos_9_buscar_en_arreglo_string {
     public static void main(String[] args) {
-        
+
         System.out.println("\n======= ARREGLO DE STRING =======");
         // ABRIMOS CONSOLA
         Scanner consola = new Scanner(System.in);
@@ -26,7 +26,8 @@ public class arreglos_9_buscar_en_arreglo_string {
         System.out.print("\nIndique el nombre que desea buscar: ");
         String buscar = consola.nextLine();
         consola.close();
-        for (; i < nombres.length && !nombres[i].equalsIgnoreCase(buscar); i++) {}
+        for (; i < nombres.length && !nombres[i].equalsIgnoreCase(buscar); i++) {
+        }
         if (i == nombres.length) {
             System.out.println("\nNombre no encontrado");
         } else if (nombres[i].equalsIgnoreCase(buscar)) {
