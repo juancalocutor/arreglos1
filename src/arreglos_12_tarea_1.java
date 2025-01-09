@@ -2,15 +2,19 @@ import java.util.Scanner;
 
 public class arreglos_12_tarea_1 {
     public static void main(String[] args) {
+
+        Scanner consola = new Scanner(System.in);
         // CREAOS EL ARREGLO INICIAL
-        int[] numeros = new int[10];
+        System.out.print("\n¿Cuántos números va a ingresar? ");
+        int cantidad = consola.nextInt();
+        int[] numeros = new int[cantidad];
 
         System.out.println(" ");
 
-        System.out.println("INGRESE 10 NÚMEROS ENTEROS\n");
+        System.out.println("INGRESE " + cantidad + " NÚMEROS ENTEROS\n");
 
         // Llenado del arreglo
-        Scanner consola = new Scanner(System.in);
+
         for (int i = 0; i < numeros.length; i++) {
             System.out.print("Número " + (i + 1) + " : ");
             numeros[i] = consola.nextInt();
@@ -28,6 +32,17 @@ public class arreglos_12_tarea_1 {
         for (int i = 0; i < numeros.length - i; i++) {
             System.out.println("Pareja " + (i + 1) + ": " + numeros[i] + " & " + (numeros[numeros.length - 1 - i]));
         }
+        System.out.println("\n");
+        // SE IMPRIME EL NÚMERO MAYOR
+        System.out.println("==================== SE IMPRIME EL NÚMERO MAYOR ================\n");
+        int max = 0;
+        int min = 0;
+
+        for (int i = 0; i < numeros.length; i++) {
+            max = (numeros[max] > numeros[i]) ? max : i;
+            min = (numeros[min] < numeros[i]) ? min : i;
+        }
+        System.out.println("\nEl número mayor es: " + numeros[max] + " y el menor es: " + numeros[min]);
         System.out.println("\n");
     }
 }
