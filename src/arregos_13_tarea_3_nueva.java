@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class arreglos_13_tarea_3 {
+public class arregos_13_tarea_3_nueva {
     public static void main(String[] args) {
         // ABRIMOS CONSOLA
         Scanner consola = new Scanner(System.in);
