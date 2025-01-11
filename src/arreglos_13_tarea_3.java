@@ -11,8 +11,8 @@ public class arreglos_13_tarea_3 {
 
         // CREAMOS EL ARREGLO Y LAS VARIABLES
         int toPos = 0, toNeg = 0, toCer = 0, k = 0, m = 0, contPos = 0, contNeg = 0;
-        double[] numeros = new double[cantidad];
-        double[] totalPos, totalNeg;
+        int[] numeros = new int[cantidad];
+        int[] totalPos, totalNeg;
 
         // LLENAMOS EL ARREGLO
         System.out.println(" ");
@@ -36,8 +36,8 @@ public class arreglos_13_tarea_3 {
         }
 
         // CON LOS NÚMEROS HALLADOS LLENAMOS LOS ARREGLOS POSITIVOS Y NEGATIVOS
-        totalPos = new double[toPos];
-        totalNeg = new double[toNeg];
+        totalPos = new int[toPos];
+        totalNeg = new int[toNeg];
 
         for (int i = 0; i < numeros.length; i++) {
             if (numeros[i] > 0) {
@@ -52,7 +52,7 @@ public class arreglos_13_tarea_3 {
         // SE IMPRIME
         DecimalFormat df = new DecimalFormat("#.00");
 
-        double sumPos = 0, sumNeg = 0;
+        int sumPos = 0, sumNeg = 0;
 
         System.out.println("\n");
         System.out.println("Números positivos: " + contPos);
@@ -62,7 +62,7 @@ public class arreglos_13_tarea_3 {
             sumPos += totalPos[i];
         }
 
-        double proPos = (sumPos / contPos);
+        float proPos = (float)sumPos / (float)contPos;
 
         System.out.println("Promedio números positivos: " + df.format(proPos));
 
@@ -73,7 +73,7 @@ public class arreglos_13_tarea_3 {
             sumNeg += totalNeg[i];
         }
 
-        double proNeg = (sumNeg / contNeg);
+        float proNeg = (float)sumNeg / (float)contNeg;
 
         System.out.println("Promedio números negativos: " + df.format(proNeg));
 
